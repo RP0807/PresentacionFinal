@@ -1,6 +1,6 @@
 import { Box, Container, Typography } from '@mui/material';
 import React from 'react';
-import '../styles.css';
+import '../styles.scss';
 
 const Servicio = ({ title, description, image }) => {
     return (

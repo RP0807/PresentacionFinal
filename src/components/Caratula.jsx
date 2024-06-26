@@ -1,14 +1,26 @@
 import { Box, Container, Typography } from '@mui/material';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Presentacion from '../assets/Presentacion.png';
-import '../styles.css';
+import '../styles.scss';
 
 const Caratula = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        setIsVisible(true);
+    }, []);
+
     return (
         <Container maxWidth="md" sx={{ mt: 4 }}>
             <Box className="presentacion">
                 <img id="foto_Presentacion" src={Presentacion} alt="Foto del Estudio" />
-                <Typography variant="h2" component="h1" sx={{ ml: 4 }}>
+                <Typography
+                    variant="h2"
+                    component="h1"
+                    id="titulo"
+                    className={isVisible ? 'visible' : ''}
+                    sx={{ ml: 4 }}
+                >
                     Bienvenido a FotoStudio
                 </Typography>
             </Box>

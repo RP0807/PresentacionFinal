@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <Box sx={{ bgcolor: 'primary.main', color: 'white', p: 2, mt: 4, textAlign: 'center', width: '100%'}}>
+        <Box sx={{ bgcolor: 'primary.main', color: 'white', p: 2, mt: 4, textAlign: 'center', width: '98%'}}>
             <Typography variant="body1">
                 &copy; {new Date().getFullYear()} FotoStudio. Todos los derechos reservados.
             </Typography>

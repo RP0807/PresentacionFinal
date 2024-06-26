@@ -1,6 +1,6 @@
 import { Box, Button, Container, MenuItem, TextField, Typography } from '@mui/material';
 import React, { useState } from 'react';
-import '../styles.css';
+import '../styles.scss';
 
 const Formulario = () => {
     const [nombre, setNombre] = useState('');
